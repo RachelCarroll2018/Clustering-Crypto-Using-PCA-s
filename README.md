@@ -51,10 +51,6 @@ Use the [`PCA` algorithm from `sklearn`](https://scikit-learn.org/stable/modules
 
 Once you have reduced the data dimensions, create a DataFrame named `pcs_df` using as columns names `"PC 1", "PC 2"` and `"PC 3"`; use the `crypto_df.index` as the index for this new DataFrame.
 
-You should have a DataFrame like the following:
-
-![pcs_df](Images/pcs_df.png)
-
 #### Clustering Cryptocurrencies Using K-Means
 
 In this section, you will use the [`KMeans` algorithm from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) to cluster the cryptocurrencies using the PCA data.
@@ -66,8 +62,6 @@ Perform the following tasks:
 2. Once you define the best value for `k`, run the `Kmeans` algorithm to predict the `k` clusters for the cryptocurrencies data. Use the `pcs_df` to run the `KMeans` algorithm.
 
 3. Create a new DataFrame named `clustered_df`, that includes the following columns `"Algorithm", "ProofType", "TotalCoinsMined", "TotalCoinSupply", "PC 1", "PC 2", "PC 3", "CoinName", "Class"`. You should maintain the index of the `crypto_df` DataFrames as is shown bellow.
-
-   ![clustered_df](Images/clustered_df.png)
 
 #### Visualizing Results
 
